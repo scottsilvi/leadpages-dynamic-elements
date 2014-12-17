@@ -1,0 +1,59 @@
+{
+    "id": "blog-dynamic",
+    "name": "Dynamic Element Example",
+    "mobile": true,
+    "notes": "Controls true",
+    "syntax": 4,
+    "version": 0.2,
+    "style": {
+        "replacements": []
+    },
+    "form": {
+        "title": {
+            "css": {
+                "font-family": "Helvetica, Arial, sans-serif",
+                "font-size": "18pt;",
+                "letter-spacing": "0em;"
+            },
+            "html": "<strong>Enter your email address below to reserve _______... it's 100% FREE!</strong>"
+        },
+        "submit": {
+            "css": {
+                "background-color": "#ffcb01;",
+                "border-color": "#ffb403;",
+                "border-width": "0pt;",
+                "border-style": "solid;",
+                "font-family": "Helvetica, Arial, sans-serif",
+                "font-size": "14pt;",
+                "letter-spacing": "-0.1em;"
+            },
+            "html": "Free Instant Access &raquo;"
+        },
+        "privacy": {
+            "css": {
+                "font-family": "Helvetica, Arial, sans-serif",
+                "font-size": "12pt;",
+                "letter-spacing": "-0.1em;"
+            },
+            "html": "<div><i class=\"icon-lock\"></i>We hate SPAM and promise to keep your email address safe. </div>"
+        }
+    },
+    "elements": [
+        {
+            "id": "video-dynamic",
+            "name": "Video Background",
+            "type": "dynamic",
+            "data": {
+                "variables": ["videourl"]
+            }
+        }
+    ],
+    "variables": {
+        "videourl": {
+              "variable": "videourl",
+              "default": "//www.youtube.com/embed/dhzI3Om9QIQ?rel=0&amp;controls=0&amp;loop=1&amp;showinfo=0&amp;autoplay=1&amp;playlist=dhzI3Om9QIQ",
+              "name": "The URL of the video",
+              "controls": true
+        }
+    }
+}
